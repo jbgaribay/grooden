@@ -1,5 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .App {
   text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(255,192,69,0.6), 0 4px 8px rgba(0,0,0,0.4); }
+  50% { box-shadow: 0 0 30px rgba(255,192,69,0.9), 0 4px 8px rgba(0,0,0,0.4); }
+}
+
+@keyframes keyPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(255,192,69,0.8);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(255,192,69,1);
+  }
+}
+
+@keyframes receiverPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(78,205,196,0.9), 0 4px 8px rgba(0,0,0,0.4);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(78,205,196,1), 0 4px 8px rgba(0,0,0,0.4);
+  }
 }
 
 .App-logo {
